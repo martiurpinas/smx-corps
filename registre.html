@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Registre d'Heroi - SMX Corps</title>
+    <title>Registro de Héroe - SMX Corps</title>
     <style>
         body{font-family:Arial, sans-serif;background:#f4f6f8;margin:20px}
         .card{background:#fff;padding:18px;border-radius:6px;max-width:640px;margin:0 auto}
@@ -16,43 +16,43 @@
 </head>
 <body>
     <main class="card">
-        <h1>Registre de Nou Heroi</h1>
-        <p class="small">Omple el formulari per afegir un heroi a la base de dades.</p>
+        <h1>Registro de Nuevo Héroe</h1>
+        <p class="small">Rellena el formulario para añadir un héroe a la base de datos.</p>
 
         <form action="#" method="post">
-            <label for="nom">Nom de l'heroi</label>
-            <input type="text" id="nom" name="nom" placeholder="Ex: Capità Llum" required>
+            <label for="nom">Nombre del héroe</label>
+            <input type="text" id="nom" name="nom" placeholder="Ej: Capitán Luz" required>
 
-            <label for="edat">Edat</label>
+            <label for="edat">Edad</label>
             <input type="number" id="edat" name="edat" min="10" max="1000" required>
 
-            <label for="univers">Univers</label>
+            <label for="univers">Universo</label>
             <select id="univers" name="univers" required>
                 <option value="">-- Selecciona --</option>
                 <option value="Marvel">Marvel</option>
                 <option value="DC">DC</option>
-                <option value="Altres">Altres</option>
+                <option value="Altres">Otros</option>
             </select>
 
             <label for="poder">Superpoder principal</label>
             <select id="poder" name="poder" required>
                 <option value="">-- Selecciona poder --</option>
-                <option value="Forca">Força</option>
-                <option value="Vol">Vol</option>
-                <option value="Telepatia">Telepatia</option>
-                <option value="Energia">Control d'Energia</option>
-                <option value="Velocitat">Supervelocitat</option>
+                <option value="Forca">Fuerza</option>
+                <option value="Vol">Vuelo</option>
+                <option value="Telepatia">Telepatía</option>
+                <option value="Energia">Control de Energía</option>
+                <option value="Velocitat">Supervelocidad</option>
             </select>
 
-            <label for="bio">Descripció / Biografia</label>
-            <textarea id="bio" name="bio" rows="6" placeholder="Escriu una breu biografia..." required></textarea>
+            <label for="bio">Descripción / Biografía</label>
+            <textarea id="bio" name="bio" rows="6" placeholder="Escribe una breve biografía..." required></textarea>
 
             <div class="actions">
-                <button type="submit">Registrar Herói</button>
+                <button type="submit">Registrar Héroe</button>
             </div>
         </form>
 
-        <p style="margin-top:12px"><a href="index.html">Torni a la pàgina principal</a></p>
+        <p style="margin-top:12px"><a href="index.html">Volver a la página principal</a></p>
     </main>
 </body>
 </html>
