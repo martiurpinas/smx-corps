@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SMX Corps - Agència de Superherois</title>
+    <style>
+        body{font-family: Arial, sans-serif; margin:20px; background:#f4f6f8}
+        header{background:#0b3d91;color:#fff;padding:18px;border-radius:6px}
+        nav ul{list-style:none;padding:0;margin:10px 0;display:flex;gap:12px}
+        nav a{color:#0b3d91;text-decoration:none;font-weight:600}
+        .container{background:#fff;padding:18px;border-radius:6px;margin-top:12px}
+        table{width:100%;border-collapse:collapse}
+        th,td{border:1px solid #ddd;padding:8px;text-align:left}
+        th{background:#e9eef8}
+        .hero-photo{width:120px}
+        .danger-low{color:green}
+        .danger-medium{color:orange}
+        .danger-high{color:red;font-weight:bold}
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>SMX Corps</h1>
+        <p style="margin:0.2rem 0 0.4rem 0;opacity:0.95">Protegint ciutats i administrant talents superheroi — Missió: preservar la seguretat global treballant amb responsabilitat i ètica.</p>
+        <nav>
+            <ul>
+                <li><a href="#ranking">Rànquing</a></li>
+                <li><a href="#poders">Nivells de Poder</a></li>
+                <li><a href="registre.html">Registre d'heroi</a></li>
+                <li><a href="heroi.html">Fitxa d'heroi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="ranking">
+            <h2>Taula de Rànquing — Top 3 Heròis</h2>
+            <p>Rànquing basat en missions completades i nivell d'impacte.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Posició</th>
+                        <th>Nom</th>
+                        <th>Missions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hero-photo" rowspan="2">
+                            <img src="images/hero1.jpg" alt="Hero 1" style="width:100%;height:auto;border-radius:4px">
+                        </td>
+                        <td>1</td>
+                        <td>Capità Llum</td>
+                        <td>128</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Falcó Nòrdic</td>
+                        <td>112</td>
+                    </tr>
+                    <tr>
+                        <td class="hero-photo">
+                            <img src="images/hero3.jpg" alt="Hero 3" style="width:100%;height:auto;border-radius:4px">
+                        </td>
+                        <td>3</td>
+                        <td>La Tempesta</td>
+                        <td>98</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="poders" style="margin-top:18px">
+            <h2>Nivells de Perill (Poder)</h2>
+            <p>
+                Els nivells de perill es calculen segons l'abast del poder i la probabilitat de dany col·lectiu:
+                <span class="danger-low"> Baix</span> — controlat i localitzat; 
+                <span class="danger-medium"> Mitjà</span> — capacitat de causar danys significatius; 
+                <span class="danger-high"> Alt</span> — amenaces amb potencial per a desastres globals. 
+            </p>
+            <p style="font-size:0.95rem;color:#333">
+                Exemple: un heroi amb energia descontrolada es classifica com a <span class="danger-high">Alt</span>, mentre que habilitats d'infiltració i intel·ligència tàctica solen ser <span class="danger-low">Baix</span>.
+            </p>
+        </section>
+    </main>
+
+    <footer style="margin-top:18px;text-align:center;color:#666">
+        <small>SMX Corps — Base de dades d'herois (versió prototip)</small>
+    </footer>
 </body>
 </html>
